@@ -25,9 +25,11 @@ def preprocess_date(d):
     return date
 
 speechs = []
+speech_id = 0
 
 for i in range(1, top_posts + 1):
     print("processing: ", i)
+    speech_id += i
     url = 'https://lopezobrador.org.mx/page/' + str(i) + '/'
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'lxml')
@@ -41,8 +43,11 @@ for i in range(1, top_posts + 1):
             npage = requests.get(uinternal_url)
             nsoup = BeautifulSoup(npage.content, 'html.parser')
             content = nsoup.find_all('div', class_='entry-content')
-            dct = {'date': dte, 'title': title[0].text , 'url': uinternal_url, 'content': content[0].text}
+            if content[0].em is not None:
+                content[0].em.clear()
+            dct = {'id_speech': speech_id, 'date': dte, 'title': title[0].text , 'url': uinternal_url, 'content': content[0].text}
             speechs.append(dct)
+            speech_id += i
 
 print("saving speechs")
 keys = speechs[0].keys()
