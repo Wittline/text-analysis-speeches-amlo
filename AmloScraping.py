@@ -18,6 +18,9 @@ def getMonth(m):
 
     return months[m]
 
+
+
+
 def preprocess_date(d):
     f = d.split(' ')
     date = datetime(year=int(f[2]), month=int(getMonth(f[0])), day=int(f[1].replace(',', '')))
