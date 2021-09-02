@@ -18,9 +18,6 @@ def getMonth(m):
 
     return months[m]
 
-
-
-
 def preprocess_date(d):
     f = d.split(' ')
     date = datetime(year=int(f[2]), month=int(getMonth(f[0])), day=int(f[1].replace(',', '')))
@@ -57,4 +54,4 @@ keys = speechs[0].keys()
 with open('amlo_speechs.csv', 'w', encoding='utf8', newline='')  as output_file:
     dict_writer = csv.DictWriter(output_file, keys)
     dict_writer.writeheader()
-    dict_writer.writerows(speechs)    
+    dict_writer.writerows(speechs)
