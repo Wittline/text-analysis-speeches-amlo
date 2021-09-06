@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date, datetime
 import csv
 
-top_posts = 661
+top_posts = 662
 url = 'https://lopezobrador.org.mx/page/'
 print(list(range(1, top_posts + 1)))
 
@@ -20,7 +20,9 @@ def getMonth(m):
 
 def preprocess_date(d):
     f = d.split(' ')
-    date = datetime(year=int(f[2]), month=int(getMonth(f[0])), day=int(f[1].replace(',', '')))
+    date = datetime(year=int(f[2]),
+                    month=int(getMonth(f[0])),
+                    day=int(f[1].replace(',', '')))
 
     return date
 
@@ -51,7 +53,7 @@ for i in range(1, top_posts + 1):
 
 print("saving speechs")
 keys = speechs[0].keys()
-with open('amlo_speechs.csv', 'w', encoding='utf8', newline='')  as output_file:
+with open('amlo_speechs.csv', 'w', encoding='utf-8', newline='')  as output_file:
     dict_writer = csv.DictWriter(output_file, keys)
     dict_writer.writeheader()
     dict_writer.writerows(speechs)
