@@ -1,6 +1,6 @@
 # An Text Analysis of Andres Manuel Lopez Obrador’s Speeches
 
-This repository proposes to analyze the text of the speeches, conferences and interviews of the current president of Mexico, and has an educational aim, there are no purposes of political interest in this document, you are free to interpret the data in your own way. I personally think that formalize this type of practices helps us to follow up on the political promises of the presidents of Latin America and could help us to make decisions in advance for our countries, however, what I intend to do is to show you a basic flow of text analysis using Python, visualize aggregated data and get insight at every step. Enjoy it.
+This repository proposes to analyze the text of the speeches, conferences and interviews of the current president of Mexico, and has an educational aim, there are no purposes of political interest in this document, you are free to interpret the data in your own way. I personally think that formalize this type of practices helps us to follow up on the political promises of the presidents of Latin America and could help us to make decisions in advance for our countries, however, what I intend to do is to show you a basic flow of text analysis using Python, visualize aggregated data and get insight at every step.
 
 ![image](https://user-images.githubusercontent.com/8701464/133873297-7d7d7a2d-27db-4f51-8a44-218dd8a457b1.png)
 
