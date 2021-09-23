@@ -22,7 +22,6 @@ Today AMLO’s site is grouping the speeches into 667sections, and this number g
 # Let’s start looking for insight
 **The amlo_analysis.ipynb** notebook contains all the analysis code, here we will explain each step taken and interpretation of each visualization.
 
-
 ## Reading the .csv file generated in the previous step
 Here we can see the speeches described for each box of each url with its dates, and this is what I want.
 
