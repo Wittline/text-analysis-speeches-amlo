@@ -10,6 +10,7 @@ The official AMLO website has a stenographic version of each speech, It is the p
 
 https://lopezobrador.org.mx/
 
+
 # Web scraping with Python
 
 Today AMLO’s site is grouping the speeches into 667sections, and this number grows weekly, each section has a group of speeches by date, my scrapping technique is targeting each element of a group, which represents the speech, check the image below:
