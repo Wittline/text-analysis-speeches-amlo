@@ -4,6 +4,7 @@ This repository proposes to analyze the text of the speeches, conferences and in
 
 ![image](https://user-images.githubusercontent.com/8701464/133873297-7d7d7a2d-27db-4f51-8a44-218dd8a457b1.png)
 
+
 # Data source
 
 The official AMLO website has a stenographic version of each speech, It is the punctual and faithful transcription about what was expressed verbally, we will take this URL for the experiments.
